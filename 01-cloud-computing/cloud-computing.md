@@ -72,3 +72,33 @@
 - Elasticity: we have the ability to scale out and scale in when we need
 - High-Availability and Fault Tolerance: we can rely on multiple data centers around the world
 - Agility: we can rapidly develop, test and launch software applications
+
+## Types of Cloud Computing
+
+- Infrastructure as a Service (IaaS):
+    - Provides building blocks for cloud IT
+    - Provides networking, computers, data storage space
+    - Has the highest level of flexibility
+    - Can be used with ease in parallel with traditional on-premises
+- Platform as a Service (PaaS):
+    - Removes the need for our organization to manage the underlying infrastructure
+    - We can focus on the deployment and management of our application
+- Software as a Service:
+    - Complete product that is run and managed by the service provider
+- Examples of services for each type:
+    - IaaS:
+        - Amazon EC2 (on AWS)
+        - Azure VMs, Digital Ocean, Linode
+    - Platform as a Service:
+        - Elastic Beanstalk (on AWS)
+        - Heroku, Google App Engine (on GCP), Azure App Service
+    - Software as a Service:
+        - Many AWS services (ex. Rekognition for ML)
+        - Google Apps (Gmail), Dropbox, Zoom, etc.
+
+## Pricing
+
+- AWS has 3 pricing fundamentals:
+    - Compute: we pay for the compute time
+    - Storage: we pay for data stored in the cloud
+    - Networking: we pay for data which leaves the cloud, data transfer inside the cloud is free
