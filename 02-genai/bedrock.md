@@ -70,3 +70,37 @@
     - Cross-Domain Performance: measure the model's ability to perform cross different domain tasks (example monitor multi-domain ecommerce platforms)
     - Conversion Rate: generate recommended desired outcomes such as purchases
     - Efficiency: evaluate the model's efficiency in computation, resource utilization
+
+## RAG and Knowledge Bases
+
+- RAG =  Retrieval-Augmented Generation
+- Allows a foundation model to reference a data source outside of its training data
+- This data source is usually stored in a **vector database**
+- Bedrock takes care of creating vector embeddings in the vector database of choice based on our data
+
+## Vector Databases
+
+- Vector databases on AWS can be of several kind
+- There are 2 AWS services that can be used as vector database with Bedrock: OpenSearch and Aurora. By default Bedrock will use OpenSearch
+- There are 3 other options for databases that can be used with Bedrock: MongoDB, Redis and Pinecone
+- Embedding models: there are used to convert date (text, images) into vectors
+- Available embedding models for Bedrock are Amazon Titan and cohere
+- The embedding model and the foundation model can be different
+- Documents are split into chunks before storing them as embeddings in vector databases
+- The outcome if this procedure is that the data (vectors) are easily searchable and we can de similarity queries
+- RAG data sources for Bedrock can be the following:
+    - Amazon S3
+    - Confluence
+    - Microsoft SharePoint
+    - Salesforce
+    - Web pages (our website, social media, etc.)
+- Use cases for RAG:
+    - Customer service chatbot:
+        - Knowledge base: products, features, specs, troubleshooting, etc.
+        - RAG application: chatbot that can answer customer queries
+    - Legal Research and Analysis:
+        - Knowledge base: laws, regulations, case precedents, legal opinions and expert analysis
+        - RAG application: chatbot that can provide relevant information for specific legal queries
+    - Healthcare Question-Answering
+        - Knowledge base: diseases, treatments, clinical guidelines, research papers
+        - RAG application: chatbot that can answer complex medical queries
