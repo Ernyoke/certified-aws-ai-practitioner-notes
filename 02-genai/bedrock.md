@@ -47,3 +47,26 @@
     - We want to train the model with our own exclusive data
     - Targeted use cases: categorization, assessing accuracy
 
+## Evaluating Foundation Models
+
+- Automatic Evaluation:
+    - Used to evaluate a model for quality control
+    - Built-in task types:
+        - Text summarization
+        - Question and answer
+        - Text classification
+        - Open-ended text generation
+    - We have to add a prompt dataset to do evaluation, or we can use the built-in curated prompt dataset
+    - Scores are calculated automatically
+    - There are different ways to calculate this grading score suing various statistical methods (example BERTScore, F1 score)
+- Human Evaluation:
+    - We can chose a work team to evaluate a model
+    - This work team can be employees of our company or subject-matter experts (SMEs)
+    - We define metrics and how to evaluate a model: thumbs up/down, ranking, etc.
+    - We can chose from built-in task types (same as with automatic evaluation) or add custom task types
+- We can have business metrics top evaluate a model on:
+    - Uses Satisfaction: gather use feedback and asses their satisfaction with the model responses
+    - Average Revenue Per Use (ARPU): we can compute the average revenue per user attributed to the GenAI app (monitor ecommerce user base revenue)
+    - Cross-Domain Performance: measure the model's ability to perform cross different domain tasks (example monitor multi-domain ecommerce platforms)
+    - Conversion Rate: generate recommended desired outcomes such as purchases
+    - Efficiency: evaluate the model's efficiency in computation, resource utilization
