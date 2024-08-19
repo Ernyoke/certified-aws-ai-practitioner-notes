@@ -1,4 +1,6 @@
-# Amazon Q Business
+# Amazon Q
+
+## Amazon Q Business
 
 - It is a fully managed GenAI assistant for our employees
 - Its knowledge is based our our company's knowledge and data
@@ -20,3 +22,9 @@
     - We can block specific words, topics
     - We can choose for Amazon Q to respond with only internal information (vs using external knowledge)
     - We can set up controls for all type of topics and subjects or we can set up smaller topic-level controls
+
+### Q Apps
+
+- We can create GenAI powered apps without coding by only using natural language
+- Leverages company owned internal data
+- We the possibility to have plugins (example Jira)
