@@ -28,3 +28,23 @@
 - We can create GenAI powered apps without coding by only using natural language
 - Leverages company owned internal data
 - We the possibility to have plugins (example Jira)
+
+## Amazon Q Developer
+
+- It has 2 sides:
+    - AWS apps and websites:
+        - It can answer questions about AWS documentation and AWS service selection
+        - It can also answer questions about resources in our AWS account
+        - It can also suggest CLI commands to execute to make changes in our AWS account
+        - Helps us to do bill analysis, resolve errors and troubleshooting
+    - AI code companion:
+        - Helps us to write code for new applications (similar to GitHub Copilot)
+        - Supports many languages: Java, JavaScript, Python, TypeScript, C#, etc.
+        - It can give us real-time code suggestions and security scans
+        - It provides also a software agent to implement features, generate documentation and bootstrap new projects
+        - Works with several IDEs, such as VSCode, JetBrain suite, Visual Studio
+        - Beside all of this it can do the following:
+            - Answer questions about AWS development
+            - Do code completion and code generation
+            - Scan code four vulnerabilities
+            - Debugging, optimizations and improvements
