@@ -29,3 +29,22 @@
     - High K (example 500): more probable words, more diverse and creative responses
 - *Length*: maximum length of the answer
 - *Stop Sequences*: tokens that signal the model to stop generating output
+
+## Prompt Engineering Techniques
+
+- **Zero-Shot Prompting**:
+    - Present a task to the model without providing any examples or explicit training for that specific task
+    - We rely fully on the model's general knowledge
+    - The larger and more capable the model, the more likely we get good results
+- **Few-Shots Prompting**:
+    - We provide examples of a task to the model to guide its output
+    - We provide a "few shots" to the model to perform the task
+    - If we provide only one example, this technique is called **One-Shot Prompting**
+- **Chain of Thought Prompting**:
+    - Divide the task into a sequence of reasoning steps, leading to more structure and coherence
+    - Using a sequence like "Think step by steps" helps
+    - Helpful when solving a problem as a human usually requires several steps
+    - Can be combined with Zero-Shot or Few-Shots prompting
+- **Retrieval-Augmented Generation (RAG)**:
+    - Combine the model's ability with external data sources to generate a more informed and contextual rich response
+    - The initial prompt is then augmented with external information
