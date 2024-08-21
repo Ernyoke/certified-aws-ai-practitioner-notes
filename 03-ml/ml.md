@@ -108,3 +108,35 @@
     - Data that does not follow a specific structure and is often text-heavy or multimedia content
     - Text data: articles, social media posts, customer reviews, etc.
     - Image data: data in the form of images, can vary widely in format and content
+
+## Supervised Learning
+
+- Learn a mapping function that can predict the output for new unseen input data
+- Requires labeled data: very powerful, but difficult to perform on millions of data points
+- Regression:
+    - Used to predict a numeric value based on input data
+    - The output variable is continuous, it can tale any value within range
+- Classification:
+    - Used to predict the categorical label of an input data
+    - The output variable is discrete, it falls into a specific category or class
+    - Types of classifications:
+        - Binary classification: spam/not spam
+        - Multiclass classification
+        - Multi-label classification: assign multiple labels to the same data point
+- Training/Validation/Test Set:
+    - Training Set:
+        - Used to train the model
+        - Percentage: typically 60-80% of the dataset
+    - Validation Set:
+        - Used to tine model parameters and validate performance
+        - Percentage: typically 10-20% of the data set
+    - Test Set:
+        - Used to evaluate the final performance of the model
+        - Percentage: typically 10-20% of the data set
+- Feature Engineering:
+    - It is the process of using domain knowledge to select and transform raw data into meaningful features
+    - Helps enhancing the performance of machine learning models
+    - Techniques:
+        - Feature Extraction: extract useful information from raw data, such as deriving age from date of birth
+        - Feature Selection: select a subset of relevant features, like choosing important predictors in a regression model
+        - Feature Transformation: transform data for better model performance, such as normalizing numerical data
