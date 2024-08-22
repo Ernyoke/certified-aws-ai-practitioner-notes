@@ -140,3 +140,47 @@
         - Feature Extraction: extract useful information from raw data, such as deriving age from date of birth
         - Feature Selection: select a subset of relevant features, like choosing important predictors in a regression model
         - Feature Transformation: transform data for better model performance, such as normalizing numerical data
+
+## Unsupervised Learning
+
+- The goal is to discover inherent patterns, structures or relationships within the the data
+- The machine must uncover and create groups itself, but humans still put labels on the output groups
+- Common techniques include clustering, dimensionality reduction and association rule learning
+- Feature engineering cal help improve the quality of the training
+- Unsupervised Learning techniques:
+    - Clustering:
+        - Used to group similar data points together into clusters based on their features
+        - Examples: customer segmentation
+        - Algorithms: K-Means Clustering
+    - Association Rule Learning Technique:
+        - Example: market basket analysis (identify which products are frequently bought together)
+        - Algorithms: Apriori algorithm
+    - Anomaly Detection:
+        - Example: fraud detection
+        - Algorithms: Isolation Forest
+
+## Semi-Supervised Learning
+
+- We can use a small amount of labeled data and a large amount of unlabeled data to train the system
+- The partially trained algorithm itself labels the unlabeled data (pseud-labeling)
+- The model is then re-trained on the resulting data mix without being explicitly programmed
+
+## Reinforcement Learning (RL)
+
+- Is a type of machine learning algorithm where an agent learns to make decisions by performing actions in an environment to maximize cumulative rewards
+- Key concepts:
+    - Agent: learner of decision maker
+    - Environment: the external system the agent interacts with
+    - Action: the choice made by the agent
+    - Reward: feedback from the environment based on the agent's action
+- Learning process:
+    - The agent observes the current state of the environment
+    - It selects an action based on its policy
+    - The environment transitions to a new state and provides a reward
+    - Tha agent updates its policy to improve future decisions
+- Examples of use cases:
+    - Robotics: Train a robot to navigate a maze
+    - Gaming: teach an AI to play complex games
+    - Finance: portfolio management and trading strategies
+    - Healthcare: optimizing treatment plans
+    - Autonomous vehicles: path planning and decision making
