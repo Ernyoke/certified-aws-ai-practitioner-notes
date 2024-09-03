@@ -184,3 +184,15 @@
     - Finance: portfolio management and trading strategies
     - Healthcare: optimizing treatment plans
     - Autonomous vehicles: path planning and decision making
+- Reinforcement Learning from Human Feedback (RLHF):
+    - We can use human feedback to help ML models to self-learn more efficiently
+    - In reinforcement learning there is a reward function, with RLHF we incorporate human feedback directly into the reward function:
+        - First the model responses are compared to human responses
+        - Then, a human assesses the quality of the model's responses
+    - RLHF is used throughout GenAI applications including LLM models
+    - RLHF significantly enhances the model performance
+    - RLHF training steps:
+        1. Data collection
+        2. Supervised fine-tuning of a language model 
+        3. Build a separate reward model (requires human intervention)
+        4. Optimize the language model with reward-based model
