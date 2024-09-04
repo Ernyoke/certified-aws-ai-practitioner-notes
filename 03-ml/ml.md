@@ -196,3 +196,122 @@
         2. Supervised fine-tuning of a language model 
         3. Build a separate reward model (requires human intervention)
         4. Optimize the language model with reward-based model
+
+## Model Fit
+
+- In case our model has a bad performance, we need to take a look at the model fit
+- **Overfitting**:
+    - The model performs very well on the training data
+    - It does not perform well on the evaluation data
+- **Underfitting**:
+    - The model performs poorly on the training data
+    - Could be a problem of having a model that is too simple or the data has poor features
+- **Balanced**:
+    - Neither overfitting or underfitting
+    - The model performs well on the training and evaluation data
+
+## Bias and Variance
+
+- Bias:
+    - Difference or error between the predicted and actual value
+    - Occurs due to the wrong choice in the ML process
+    - High Bias:
+        - The model des not closely match the training data
+        - Example: linear regression function on a non-linear dataset
+        - Considered as underfitting
+    - Reducing Bias:
+        - Use a more complex model
+        - Increase the number of features
+- Variance:
+    - Represents how much the performance of a model changes if trained on a different dataset which has a similar distribution
+    - High Variance:
+        - The model is very sensitive to changes in the training data
+        - This is the case when we face overfitting: performs well on training data, but poorly on unseen test data
+    - Reducing variance:
+        - Feature selection: use less, more important features
+        - Split data into training and test sets multiple times
+
+![Bias and Variance](images/bias-and-variance.png)
+
+
+## Model Evaluation Metrics
+
+### Confusion Matrix
+
+- A confusion matrix can help understand the more nuanced results of a model
+- Binary confusion matrix:
+
+|               | Actual YES      | Actual NO       |
+|---------------|-----------------|-----------------|
+| Predicted YES | TRUE POSITIVES  | FALSE POSITIVES |
+| Predicted NO  | FALSE NEGATIVES | TRUE NEGATIVES  |
+
+- Measuring models:
+    - Accuracy: **(TRUE POSITIVES + TRUE NEGATIVES) / (TRUE POSITIVES + FALSE POSITIVES + TRUE NEGATIVES + FALSE NEGATIVES)**
+        - Measures the fraction of correct predictions; the range is 0 to 1
+        - A larger value indicates better predictive accuracy
+    - Recall: **TRUE POSITIVES / (TRUE POSITIVES + FALSE NEGATIVES)**
+        - AKA Sensitivity, True Positive rate, Completeness
+        - It is the percent of positive rightly predicted
+        - It is a good choice when we care about the false negatives, ex. fraud detection
+    - Precision: **TRUE POSITIVES / (TRUE POSITIVES + FALSE POSITIVES)**
+        - AKA Correct Positives
+        - It is the percent of relevant results
+        - It is a good choice when we care about false positives, ex. medical screening, drug testing
+    - Other metrics:
+        - Specificity: **TRUE NEGATIVES / (TRUE NEGATIVES + FALSE POSITIVES)** (True negative rate)
+        - F1 score: 
+            - **2 * TRUE POSITIVES / 2 * TRUE POSITIVES + FALSE POSITIVES + FALSE NEGATIVES**
+            - **2 * (Precision * Recall) / (Precision + Recall)**
+            - It is the harmonic mean of precision and sensitivity
+            - Good choice when we care about precision and recall
+        - RMSE - Root mean squared error
+            - It is used for accuracy measurement
+            - It only cares about right and wrong answers
+
+### AUC-ROC - Area under the curve-receiver operator curve
+
+- ROC Curve - Receiver Operating Characteristic Curve
+    - It is a plot of true positive rate (sensitivity/recall) vs. false positive rate (Specificity) at various threshold settings
+
+    ![ROC Curve](images/roc-curve.png)
+
+- Points above the diagonal represent good classification (better than random)
+    - The ideal curve would be a point in the upper-left corner
+    - The more it's "bent" towards upper-left, the better
+- AUC: the area under ROC curve - Area Under the Curve
+    - Equal to probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative instance
+    - ROC AUC of 0.5 is useless classifier, 1.0 is perfect
+    - Commonly used metric for comparing classifiers
+- Example of usage of Confusion Matrix with measuring models: https://aws.amazon.com/blogs/machine-learning/predicting-customer-churn-with-amazon-machine-learning/
+
+### Regression Metrics
+
+- Metrics used measure the quality of a regression model:
+    - MAE (Mean Absolute Error): measures the average magnitude of errors between the predicted values and the actual values.
+    - MAPE (Mean Absolute Percentage Error): used to assess the accuracy of a predictive model by calculating the average percentage error between the predicted values and the actual values. MAPE expresses the error as a percentage, making it easier to interpret across different scales
+    - RMSE (Root Mean Squared Error): measures the average magnitude of the error between the predicted values and the actual values, with a higher emphasis on larger errors
+    - R Squared: explains variance in our model. R2 close to 1 means predictions are good
+
+## Inferencing
+
+- Inferencing is when a model makes predictions on new data
+- Types of inferencing:
+    - Real Time
+    - Batch
+
+## Phases of a Machine Learning Project
+
+![Phases of a Machine Learning Project](images/phases-of-ml-project.png)
+
+## Hyperparameter Tuning
+
+- Hyperparameter:
+    - There are tunable input parameters for a model while learning
+    - Examples: learning rate, batch size, number of epoch, regularization, etc.
+- Hyperparameter tuning:
+    - Process of finding best hyperparameter values to optimize the model performance
+    - Setting good parameters can improve the model accuracy, can reduce overfitting and can enhance generalization
+- How to do it?
+    - Grid search, random search
+    - Using services such as SageMaker Automatic Model Tuning (AMT)
