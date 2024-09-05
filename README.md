@@ -11,3 +11,11 @@
     - [Amazon Q](02-genai/q.md)
 3. Artificial Intelligence and Machine Learning
     - [AI and Machine Learning Overview](03-ml/ml.md)
+4. AWS Managed AI Services
+    - [Amazon Comprehend](04-managed-ai-services/comprehend.md)
+    - [Amazon Translate](04-managed-ai-services/translate.md)
+    - [Amazon Transcribe](04-managed-ai-services/transcribe.md)
+    - [Amazon Polly](04-managed-ai-services/polly.md)
+    - [Amazon Rekognition](04-managed-ai-services/rekognition.md)
+    - [Amazon Forecast](04-managed-ai-services/forecast.md)
+    - [Amazon Lex](04-managed-ai-services/lex.md)

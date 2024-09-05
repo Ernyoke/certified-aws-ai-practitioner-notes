@@ -293,6 +293,15 @@
     - RMSE (Root Mean Squared Error): measures the average magnitude of the error between the predicted values and the actual values, with a higher emphasis on larger errors
     - R Squared: explains variance in our model. R2 close to 1 means predictions are good
 
+### Metrics for Evaluating LLMs
+
+- Perplexity loss: measures how well the model can predict the next word in a sequence of text
+- Recall-Oriented Understudy for Gisting Evaluation (ROUGE): set of metrics used in the field of natural language processing to evaluate the quality of machine-generated text
+- There are several variants of ROUGE metrics:
+    - ROUGE-1, ROUGE-2, ROUGE-N: primary ROUGE metric, measures the overlap of n-grams between the system-generated and reference texts
+    - ROUGE-L: calculates the longest common subsequence between the system-generated text and the reference text
+    - ROUGE-L-Sum: used mainly to evaluate summarization systems. Takes into account the order of words in the text, which is important in text summarization tasks
+
 ## Inferencing
 
 - Inferencing is when a model makes predictions on new data
