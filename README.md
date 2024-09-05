@@ -19,3 +19,8 @@
     - [Amazon Rekognition](04-managed-ai-services/rekognition.md)
     - [Amazon Forecast](04-managed-ai-services/forecast.md)
     - [Amazon Lex](04-managed-ai-services/lex.md)
+    - [Amazon Personalize](04-managed-ai-services/personalize.md)
+    - [Amazon Textract](04-managed-ai-services/textract.md)
+    - [Amazon Kendra](04-managed-ai-services/kendra.md)
+    - [Amazon Mechanical Turk](04-managed-ai-services/mechanical-turk.md)
+    - [Amazon Augmented AI (A2I)](04-managed-ai-services/a2i.md)
