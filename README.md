@@ -24,3 +24,4 @@
     - [Amazon Kendra](04-managed-ai-services/kendra.md)
     - [Amazon Mechanical Turk](04-managed-ai-services/mechanical-turk.md)
     - [Amazon Augmented AI (A2I)](04-managed-ai-services/a2i.md)
+    - [AWS DeepRacer](04-managed-ai-services/deepracer.md)
