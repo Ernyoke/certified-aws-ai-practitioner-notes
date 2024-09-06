@@ -21,6 +21,15 @@
     - Can learn the context associated with a given word
 - We can use both for highest transcription accuracy
 
+## Amazon Transcribe Medical
+
+- Automatically converts medical-related speech to text (HIPAA compliant)
+- Has the ability to transcribe medical terminologies such as:
+    - Medicine names
+    - Procedures
+    - Conditions and diseases
+- Supports both real-time (microphone) and batch (upload multiple files) transcriptions
+
 ## Use Cases
 
 - Call Analytics:

@@ -24,3 +24,14 @@
 - Can be used to extract terms like policy numbers or phrases that imply a customer escalation, or anything specific to our business
 - We can train the model with custom data such as a list of entities and documents that contain them
 - It can do real-time or async analysis
+
+## Amazon Comprehend Medical
+
+- Detects and returns useful information in unstructured clinical text:
+    - Can understand physician's notes
+    - Can discharge summaries
+    - Can understand test results and case notes
+- Uses NLP to detect Protected Health Information (PHI)
+- We can store input documents in Amazon S3
+- Input data can be analyzed in real-time with the help of Kinesis Data Firehose
+- We can use Amazon Transcribe to transcribe patient narratives into text that can be analyzed by Comprehend Medical
