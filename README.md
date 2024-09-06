@@ -26,3 +26,5 @@
     - [Amazon Augmented AI (A2I)](04-managed-ai-services/a2i.md)
     - [AWS DeepRacer](04-managed-ai-services/deepracer.md)
     - [Hardware for AI](04-managed-ai-services/ai-hardware.md)
+5. Amazon SageMaker
+    - [Amazon SageMer](05-sagemaker/sagemaker.md)
