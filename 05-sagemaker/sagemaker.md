@@ -43,3 +43,23 @@
 - Supports team collaboration
 - Offers an interface for tuning and debugging and deploying ML models
 - We can also create automatic workflows from SageMaker Studio
+
+## Data Wrangler
+
+- Part of SageMaker Studio
+- Can be used to prepare tabular and image data for machine learning
+- We can do data preparation, transformations and feature engineering
+- From a single interface we can do data selection, cleansing, exploration, visualizations and data processing
+- Offers SQL support
+- We can also analyze the quality of our data with Data Quality tool
+- When we use Data Wrangler we would want to create ML features:
+    - Features are inputs to ML models used during training and used for inference
+    - It is important to have high quality features across our datasets in our company for reuse
+
+## Feature Store
+
+- Can ingest features from a variety of sources
+- In Feature Store we get on overview of all our features that we saved
+- Offers the ability to define the transformation of data into feature from with Feature Store
+- We can also publish directly from Data Wrangler into Feature Store
+- Feature are discoverable within SageMaker Studio
