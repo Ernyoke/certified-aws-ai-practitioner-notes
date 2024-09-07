@@ -28,3 +28,5 @@
     - [Hardware for AI](04-managed-ai-services/ai-hardware.md)
 5. Amazon SageMaker
     - [Amazon SageMer](05-sagemaker/sagemaker.md)
+6. AI Challenges and Responsibilities
+    - [](06-ai-challenges-and-responsibilities/responsible-ai.md)
