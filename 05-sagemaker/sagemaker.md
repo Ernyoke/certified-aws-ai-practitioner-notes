@@ -140,3 +140,30 @@
     - Model: create or register a SageMaker model
     - ClarifyCheck: perform drift check against the baseline (data bias, model bias, model explainability)
     - QualityCheck: perform drift checks against the baseline (data quality, model quality)
+
+## SageMaker JumpStart
+
+- It is a ML hub where we can find pre-trained Foundation Models, computer vision models or natural language processing models
+- The collection of models is larger compared to what we can find using Amazon Bedrock
+- We can find a large collection of models from Hugging Face, Databricks, Meta, Stability AI and so on.
+- The models can be fully customized for our data and use case
+- Models are deployed directly with SageMaker, we have full control of the deployment options
+- JumpStart also offers pre-built ML solutions for demand forecasting, credit rate predictions, fraud detection and computer vision
+
+## SageMaker Canvas
+
+- It is a visual interface for building ML models (no-code/low-code option for ML)
+- We can access ready-to-use models from Bedrock or JumpStart
+- We can also built our own custom model using AutoML powered by SageMaker Autopilot
+- It is part of SageMaker Studio
+- Data transformation leverages Data Wrangler for data preparation
+- Ready-to-use models:
+    - We have direct integration with other ML services: Amazon Rekognition, Amazon Comprehend, Amazon Textract
+    - Makes it easy to built a full ML pipeline without writing code and leveraging various AWS AI services
+
+## MLFlow for Amazon SageMaker
+
+- MLFLow: it is an open-source tool which helps ML teams manage the entire ML lifecycle
+- Integrates with SageMaker using MLFlow Tracking Servers:
+    - Used to track runs and experiments
+    - We can launch it on SageMaker with a few clicks
