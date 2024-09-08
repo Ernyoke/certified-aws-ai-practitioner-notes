@@ -30,3 +30,4 @@
     - [Amazon SageMer](05-sagemaker/sagemaker.md)
 6. AI Challenges and Responsibilities
     - [Responsible AI](06-ai-challenges-and-responsibilities/responsible-ai.md)
+    - [GenAI Capabilities and Challenges](06-ai-challenges-and-responsibilities/genai-challenges.md)
