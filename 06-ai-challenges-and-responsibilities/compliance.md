@@ -20,7 +20,7 @@
     - Regulations in the EU "Artificial Intelligence Act" and US (several state and cities)
     - Promote fairness, non-discrimination and human rights
 
-# AWS Compliance
+## AWS Compliance
 
 - AWS supports are over 140 security standards and compliance certifications
 - Examples:
