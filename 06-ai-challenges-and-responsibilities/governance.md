@@ -55,7 +55,7 @@
     - Responsible framework and guidelines (bias, fairness, transparency, accountability)
     - Monitor AI ang GenAI for potential bias, fairness issues and unintended consequences
     - Educate and train teams on responsible AI practices
-- Governance Structure an Roles:
+- Governance Structure and Roles:
     - Establish data governance council or committee
     - Define clear roles and responsibilities for data stewards, data owners and data custodians
     - Provide training and support to AI and ML practitioners
