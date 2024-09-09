@@ -33,3 +33,4 @@
     - [GenAI Capabilities and Challenges](06-ai-challenges-and-responsibilities/genai-challenges.md)
     - [Compliance for AI](06-ai-challenges-and-responsibilities/compliance.md)
     - [Governance for AI](06-ai-challenges-and-responsibilities/governance.md)
+    - [Generative AI Security Scoping Matrix](06-ai-challenges-and-responsibilities/genai-security-scoping-matrix.md)
