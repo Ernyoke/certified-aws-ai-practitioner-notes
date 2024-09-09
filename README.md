@@ -36,4 +36,4 @@
     - [Generative AI Security Scoping Matrix](06-ai-challenges-and-responsibilities/genai-security-scoping-matrix.md)
     - [MLOps](06-ai-challenges-and-responsibilities/mlops.md)
 7. AWS Security Services and more
-    
+    - [IAM - Identity and Access Management](07-aws-security-services/iam.md)
