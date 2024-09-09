@@ -150,6 +150,22 @@
 - Models are deployed directly with SageMaker, we have full control of the deployment options
 - JumpStart also offers pre-built ML solutions for demand forecasting, credit rate predictions, fraud detection and computer vision
 
+### Model Fine-Tuning with JumpStart
+
+- We can fine-tune foundation models from SageMaker JumpStart
+- Fine-tuning is a customization method that involved further training and does change the weights of our model
+- There are two main approaches that you can take for fine-tuning:
+    - Domain adaptation fine-tuning:
+        -  If prompt engineering efforts do not provide enough customization, we can use domain adaption fine-tuning to get our model working with domain-specific language, such as industry jargon, technical terms, or other specialized data
+    - Instruction-based fine-tuning:
+        - Uses labeled examples to improve the performance of a pre-trained foundation model on a specific task
+        - The labeled examples are formatted as prompt, response pairs and phrased as instructions
+- Cost wise from the least expensive to the most expensive techniques we can improve a model performance are the following:
+    1. Prompt engineering (cheapest)
+    2. Retrieval augmented generation (RAG): more expensive than prompt engineering, usually requires a vector database
+    3. Instruction-based fine-tuning: uses labeled data and modifies the weights of a model, therefore is expensive than RAG or prompt engineering
+    4. Domain adaptation fine-tuning: uses unlabeled data for fine-tuning, the most expensive approach
+
 ## SageMaker Canvas
 
 - It is a visual interface for building ML models (no-code/low-code option for ML)
