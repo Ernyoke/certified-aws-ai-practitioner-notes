@@ -37,3 +37,10 @@
     - [MLOps](06-ai-challenges-and-responsibilities/mlops.md)
 7. AWS Security Services and more
     - [IAM - Identity and Access Management](07-aws-security-services/iam.md)
+    - [Amazon Macie](07-aws-security-services/macie.md)
+    - [AWS Config](07-aws-security-services/config.md)
+    - [Amazon Inspector](07-aws-security-services/inspector.md)
+    - [AWS CloudTrail](07-aws-security-services/cloudtrail.md)
+    - [AWS Artifact](07-aws-security-services/artifact.md)
+    - [AWS Trusted Advisor](07-aws-security-services/trusted-advisor.md)
+    - [Network Security](07-aws-security-services/network-security.md)
