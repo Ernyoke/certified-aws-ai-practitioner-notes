@@ -38,7 +38,11 @@
 - Training data must:
     - Adhere to a specific format
     - Be stored in Amazon S3
-- We can either fine tune once of do continued pre-training
+- Amazon Bedrock currently provides the following customization methods:
+    - Continued Pre-training:
+        - We provide **unlabeled** data to pre-train a foundation model by familiarizing it with certain types of inputs
+    - Fine-tuning:
+        - We provide **labeled** data in order to train a model to improve performance on specific tasks
 - To use a fine-tuned model we must use **Provisioned Throughput**
 - Note: some models can be fine-tuned, some cannot be
 - Fine-tuning use cases:
